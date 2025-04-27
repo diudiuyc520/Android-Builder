@@ -49,13 +49,13 @@ jobs:
       BUILD_DATE: "${{ needs.Read-configuration.outputs.BUILD_DATE }}"
 
       # Kernel source configuration
-      "kernelSource": {
+      kernelSource: ${{
   "name": "crux",
   "repo": "https://github.com/Meaning114514/Xturbo.git",
   "branch": "crux",
   "device": "crux",
   "defconfig": "crux_defconfig"
-}
+}}
 
       # Whether to use ccache to speed up compilation
       ENABLE_CCACHE: ${{ matrix.CONFIG.enableCcache }}
