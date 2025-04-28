@@ -10,8 +10,7 @@ on:
 
 jobs:
   Read-configuration:
-    name: 🐂 Parse *.config.json
-    runs-on: ubuntu-latest
+    name: xiaomi9.config.json
     outputs:
       CONFIGS: ${{ steps.generate-matrix.outputs.CONFIGS }}
       BUILD_DATE: ${{ steps.generate-builddate.outputs.BUILDDATE }}
